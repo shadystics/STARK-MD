@@ -4,9 +4,10 @@
   "description": "NOT THE BEST BOT IN THE UNIVERSE, BUT ENJOYMENT IS PROMISING 💫",
   "main": "index.js",
   "scripts": {
-    "start": "pm2 start index.js --name STARK-MD --attach",
-    "stop": "pm2 stop STARK-MD",
-    "restart": "pm2 restart STARK-MD"
+    "start": "node index.js"
+  },
+  "engines": {
+    "node": "22.x"
   },
   "keywords": [
     "stark-md",
@@ -37,7 +38,6 @@
     "cheerio": "^1.0.0-rc.12",
     "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
-    "jimp": "^1.6.0",
     "express": "^4.19.2",
     "file-type": "^19.4.0",
     "fluent-ffmpeg": "^2.1.3",
