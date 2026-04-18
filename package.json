@@ -1,13 +1,17 @@
 {
-  "name": "STARK-MD",
+  "name": "stark-md",
   "version": "9.0.0",
   "description": "NOT THE BEST BOT IN THE UNIVERSE, BUT ENJOYMENT IS PROMISING 💫",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js"
-  },
   "engines": {
-    "node": "22.x"
+    "node": "22.x",
+    "npm": "11.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "pm2": "pm2 start index.js --name stark-md --watch",
+    "stop": "pm2 stop stark-md",
+    "restart": "pm2 restart stark-md"
   },
   "keywords": [
     "stark-md",
